@@ -1,0 +1,5 @@
+To access /all-orders, you have to be logged in to admin user(boolean in user)
+
+originally
+Username: Admin
+Password: Admin

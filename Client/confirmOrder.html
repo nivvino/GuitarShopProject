@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <title>My Cart</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/store" id="store">Store</a></li>
+            <li id="logOutLi"><a href="/log-out" id="logOut">Log-out</a></li>
+        </ul>
+    </nav>
+    <div id="container" class="divEnterAnimation">
+        <h1>Confirm Order</h1>
+
+    </div>
+
+        <div id="productsList"></div>
+        <div id="hide" hidden>
+            <div id="container" class="divEnterAnimation">
+                <h3 id="cartSum"></h3>
+                <button id="confirm">Confirm order</button>
+            </div>
+        </div>
+
+    <script src="confirmOrder.js"></script>
+</body>
+</html>

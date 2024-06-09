@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <title>Sign-In</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li id="signUpLi"><a href="/sign-up" id="signUp">Sign-Up</a></li>
+            <li><a href="/store" id="store">Store</a></li>
+        </ul>
+    </nav>
+    <div id="container" class="divEnterAnimation">
+        <h1>Sign In</h1>
+        <form>
+        <div class="popups" id="emailPopup"></div>
+        <label for="emailInput"></label>
+        <input type="text" placeholder="Enter email" id="emailInput"><br><br>
+        <div class="popups" id="passwordPopup"></div>
+        <label for="passwordInput"></label>
+        <input type="password" placeholder="Enter password" id="passwordInput"><br><br>
+        <button onclick="signIn(event)">Sign In</button>
+        </form>
+        <p>Don't have a user? <a href="/sign-up">Sign up!</a></p>
+    </div>
+
+
+
+    <script src="signIn.js"></script>
+</body>
+</html>

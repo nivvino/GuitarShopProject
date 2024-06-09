@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <title>Sign-Up</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li id="signInLi"><a href="/sign-in" id="signIn">Sign-In</a></li>
+            <li><a href="/store" id="store">Store</a></li>
+        </ul>
+    </nav>
+    <div id="container" class="divEnterAnimation">
+    <h1>Sign Up</h1>
+        <form>
+            <div class="popups" id="fullNamePopup"></div>
+            <label for="fullNameInput">Full Name: </label><br>
+            <input type="text" id="fullNameInput" placeholder="Full Name"><br><br>
+            <div class="popups" id="EmailPopup"></div>
+            <label for="emailInput">Email: </label><br>
+            <input type="text" id="emailInput" placeholder="Enter an email"><br><br>
+            <div class="popups" id="passwordPopup"></div>
+            <label for="passwordInput">Password: </label><br>
+            <input type="password" id="passwordInput" placeholder="Enter a password"><br><br>
+            <div class="popups" id="confirmPasswordPopup"></div>
+            <label for="confirmPassword">Confirm password: </label><br>
+            <input type="password" id="confirmPassword" placeholder="Confirm password"><br><br>
+            <button onclick="checkDetails(event)">Sign Up</button>
+        </form>
+    </div>
+   
+
+
+    <script src="signUp.js"></script>
+</body>
+</html>

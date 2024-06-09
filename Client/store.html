@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Store</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li id="signInLi"><a href="/sign-in" id="signIn">Sign-In</a></li>
+            <li id="signUpLi"><a href="/sign-up" id="signUp">Sign-Up</a></li>
+            <li><a href="/store" id="store">Store</a></li>
+            <li id="logOutLi"><a href="/log-out" id="logOut">Log-out</a></li>
+        </ul>
+    </nav>
+    <div id="container" class="divEnterAnimation">
+    <h1>Our Store</h1>
+    <div id="confirmOrder">
+        <a href="/confirm-order"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="/confirm-order" id="cartCounter"></a>
+    </div>
+        <form>
+            <input type="text" id="searchInput" placeholder="search" oninput="search()"><br>
+            <input type="radio" class="radioButtons" name="checkBox" id="allBox" checked onclick="chkCheck(this)">
+            <label for="allBox">All</label><br>
+            <input type="radio" class="radioButtons" name="checkBox" id="classicalGuitars" onclick="chkCheck(this)">
+            <label for="classicalGuitars">Classical Guitars</label>
+            <input type="radio" class="radioButtons" name="checkBox" id="acousticGuitars" onclick="chkCheck(this)">
+            <label for="acousticGuitars">Acoustic Guitars</label>
+            <input type="radio" class="radioButtons" name="checkBox" id="electricGuitars" onclick="chkCheck(this)">
+            <label for="electricGuitars">Electric Guitars</label>
+            <input type="radio" class="radioButtons" name="checkBox" id="twelveStrings" onclick="chkCheck(this)">
+            <label for="twelveStrings">12-String Acoustics</label>
+            <input type="radio" class="radioButtons" name="checkBox" id="tools" onclick="chkCheck(this)">
+            <label for="tools">Tools</label>
+        </form>
+
+    </div>
+    <div id="productsList"></div>
+
+
+    <script src="store.js"></script>
+</body>
+</html>
